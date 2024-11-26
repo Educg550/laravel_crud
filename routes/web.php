@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use Illuminate\Support\Facades\URL;
+URL::forceScheme('https');
 
 // Roteamento de controllers
 Route::get('/', PostController::class . '@index')->name('posts.index');
