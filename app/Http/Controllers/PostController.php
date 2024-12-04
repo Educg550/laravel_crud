@@ -8,7 +8,7 @@ use App\Models\Post;
 class PostController extends Controller
 {
     /**
-     * Display a listing of the resource. (GET /cards)
+     * Display a listing of the resource. (GET /posts)
      */
     public function index()
     {
@@ -17,7 +17,7 @@ class PostController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage. (POST /cards)
+     * Store a newly created resource in storage. (POST /posts)
      */
     public function store(Request $request)
     {
@@ -36,7 +36,7 @@ class PostController extends Controller
     }
 
     /**
-     * Display the specified resource. (GET /cards/{id})
+     * Display the specified resource. (GET /posts/{id})
      */
     public function show(string $id)
     {
@@ -45,7 +45,7 @@ class PostController extends Controller
     }
 
     /**
-     * Update the specified resource in storage. (PATCH /cards/{id})
+     * Update the specified resource in storage. (PATCH /posts/{id})
      */
     public function update(Request $request, string $id)
     {
@@ -60,7 +60,7 @@ class PostController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage. (DELETE /cards/{id})
+     * Remove the specified resource from storage. (DELETE /posts/{id})
      */
     public function destroy(string $id)
     {
