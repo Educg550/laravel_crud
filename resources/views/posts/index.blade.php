@@ -36,6 +36,9 @@
                         <div class="card-footer">
                             <div class="row">
                                 <div class="col-sm">
+                                    <a href="{{ route('posts.show', $post->id) }}" class="btn btn-info btn-sm">View</a>
+                                </div>
+                                <div class="col-sm">
                                     <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary btn-sm">Edit</a>
                                 </div>
                                 <div class="col-sm">
